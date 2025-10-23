@@ -2,7 +2,7 @@ const input = document.getElementById('taskInput');
 const addTaskBtn = document.getElementById('addTaskBtn');
 const taskList = document.getElementById('taskList');
 
-// Function to create a task element
+// Create task element
 function createTaskElement(taskText) {
     const li = document.createElement('li');
 
@@ -43,7 +43,7 @@ function createTaskElement(taskText) {
     return li;
 }
 
-// Add task function
+// Add task
 function addTask() {
     const taskText = input.value.trim();
     if (taskText !== '') {
@@ -54,7 +54,7 @@ function addTask() {
     }
 }
 
-// Add task via button click
+// Add task via button
 addTaskBtn.addEventListener('click', addTask);
 
 // Add task via Enter key
